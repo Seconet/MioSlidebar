@@ -16,7 +16,7 @@ Una bellissima slidebar personalizzabile che si aggancia al lato del tuo sito Wo
 
 ### Pannello di Amministrazione
 Configura fino a 6 icone personalizzate con link, tooltip e colori.
-![Pannello di Amministrazione](assets/screenshots/screenshot-1.png)
+![Pannello di Amministrazione](./assets/screenshots/screenshot-1.png)
 
 ### Frontend - Sidebar Destra
 Visualizzazione della sidebar sul lato destro del sito.
@@ -24,7 +24,7 @@ Visualizzazione della sidebar sul lato destro del sito.
 
 ### Frontend - Sidebar Sinistra
 La sidebar può essere compressa o posizionata anche sul lato sinistro 
-![Sidebar Sinistra](assets/screenshots/screenshot-3.png)
+![Sidebar Sinistra](./assets/screenshots/screenshot-3.png)
 
 ## 🚀 Descrizione
 
@@ -150,5 +150,6 @@ Per supporto tecnico:
 GPL v2 o successiva. Vedi file LICENSE per maggiori informazioni.
 
 ---
+
 
 *Realizzato con ❤️ da [Seconet - Sergio Cornacchione](https://seconet.it)*
