@@ -1,0 +1,232 @@
+/* MioSlidebar Frontend Styles - VERSIONE FINALE */
+
+/* Container principale */
+#mioslidebar-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: auto;
+    z-index: 9998;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    background-color: #333333;
+}
+
+/* Posizione destra */
+.mioslidebar-right {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    flex-direction: row;
+}
+
+/* Posizione sinistra */
+.mioslidebar-left {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+    flex-direction: row-reverse;
+}
+
+/* Stato nascosto - Animazione smooth */
+#mioslidebar-container.mioslidebar-right.hidden {
+    transform: translateY(-50%) translateX(30px);
+    background-color: transparent !important;
+}
+
+#mioslidebar-container.mioslidebar-left.hidden {
+    transform: translateY(-50%) translateX(-30px);
+    background-color: transparent !important;
+}
+
+/* Freccia/Toggle */
+#mioslidebar-arrow {
+    width: 30px;
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: inherit;
+   
+}
+
+#mioslidebar-arrow:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+#mioslidebar-arrow span {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+#mioslidebar-arrow:hover span {
+    transform: scale(1.2);
+}
+
+/* Posizione freccia */
+.mioslidebar-right #mioslidebar-arrow {
+    border-radius: 10px 0 0 10px;
+}
+
+.mioslidebar-left #mioslidebar-arrow {
+    border-radius: 0 10px 10px 0;
+}
+
+/* Contenuto icone */
+.mioslidebar-icons-wrapper {
+    width: 50px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: opacity 0.3s ease;
+}
+
+/* Quando nascosto */
+#mioslidebar-container.hidden .mioslidebar-icons-wrapper {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#mioslidebar-container.hidden #mioslidebar-arrow {
+    width: 100%;
+}
+
+/* Cambia icona freccia quando nascosto */
+.mioslidebar-right.hidden #mioslidebar-arrow span.dashicons-arrow-left:before {
+    content: "\f345"; /* Freccia destra */
+}
+
+.mioslidebar-left.hidden #mioslidebar-arrow span.dashicons-arrow-right:before {
+    content: "\f341"; /* Freccia sinistra */
+}
+
+/* Singola icona */
+.mioslidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.mioslidebar-icon:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+/* Tooltip */
+.mioslidebar-tooltip {
+    position: absolute;
+    white-space: nowrap;
+    background-color: #000;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10001;
+    pointer-events: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Posizionamento tooltip */
+.mioslidebar-right .mioslidebar-tooltip {
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mioslidebar-right .mioslidebar-tooltip:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    border-left: 6px solid #000;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+.mioslidebar-left .mioslidebar-tooltip {
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mioslidebar-left .mioslidebar-tooltip:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+    border-right: 6px solid #000;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+.mioslidebar-icon:hover .mioslidebar-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive */
+/* MOBILE DISABILITATO - Nascondi completamente */
+@media (max-width: 768px) {
+    #mioslidebar-container[data-mobile-enabled="0"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        transform: none !important;
+        pointer-events: none !important;
+    }
+    
+    /* MOBILE ABILITATO - Riduci dimensioni */
+    #mioslidebar-container:not([data-mobile-enabled="0"]) {
+        width: 60px;
+    }
+    
+    #mioslidebar-container:not([data-mobile-enabled="0"]).mioslidebar-right.hidden {
+        transform: translateY(-50%) translateX(20px);
+    }
+    
+    #mioslidebar-container:not([data-mobile-enabled="0"]).mioslidebar-left.hidden {
+        transform: translateY(-50%) translateX(-20px);
+    }
+    
+    #mioslidebar-container:not([data-mobile-enabled="0"]) #mioslidebar-arrow {
+        width: 20px;
+    }
+    
+    #mioslidebar-container:not([data-mobile-enabled="0"]) #mioslidebar-arrow span {
+        font-size: 16px;
+    }
+    
+    #mioslidebar-container:not([data-mobile-enabled="0"]) .mioslidebar-icons-wrapper {
+        width: 40px;
+        padding: 8px 0;
+    }
+    
+    #mioslidebar-container:not([data-mobile-enabled="0"]) .mioslidebar-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .mioslidebar-tooltip {
+        display: none;
+    }
+}

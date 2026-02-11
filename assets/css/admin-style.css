@@ -1,0 +1,85 @@
+/* MioSlidebar Admin Styles */
+
+.mioslidebar-admin-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.mioslidebar-admin-content {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mioslidebar-admin-sidebar {
+    flex: 1;
+}
+
+.mioslidebar-admin-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mioslidebar-admin-box h3 {
+    margin-top: 0;
+    color: #23282d;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.mioslidebar-admin-box ul,
+.mioslidebar-admin-box ol {
+    margin-left: 20px;
+}
+
+.mioslidebar-admin-box li {
+    margin-bottom: 5px;
+}
+
+.icon-settings-group {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #0073aa;
+}
+
+.icon-settings-group h4 {
+    margin-top: 0;
+    color: #0073aa;
+}
+
+.icon-settings-group p {
+    margin: 10px 0;
+}
+
+.icon-settings-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.icon-settings-group input[type="text"],
+.icon-settings-group input[type="url"],
+.icon-settings-group input[type="color"] {
+    margin-top: 5px;
+}
+
+.icon-settings-group .description {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.icon-settings-group hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
