@@ -1,6 +1,6 @@
 # MioSlide Bar
 
-**Contributors:** Cergio Cornacchione  
+**Contributors:** Sergio Cornacchione  
 **Tags:** sidebar, social, icons, floating, buttons, slidebar, custom links, dashicons  
 **Requires at least:** 5.6  
 **Tested up to:** 6.5  
@@ -152,6 +152,7 @@ GPL v2 o successiva. Vedi file LICENSE per maggiori informazioni.
 
 
 *Realizzato con ❤️ da [Seconet - Sergio Cornacchione](https://seconet.it)*
+
 
 
 
