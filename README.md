@@ -1,6 +1,6 @@
 # MioSlide Bar
 
-![MioSlide Bar]([assets/screenshots/screenshot-1.png](https://github.com/Seconet/MioSlidebar/blob/main/assets/screenshot-1.png))
+![MioSlide Bar](https://github.com/Seconet/MioSlidebar/blob/main/assets/screenshot-1.png)
 
 **Contributors:** sergiocornacchione  
 **Tags:** sidebar, social, icons, floating, buttons, slidebar, custom links, dashicons  
@@ -153,6 +153,7 @@ GPL v2 o successiva. Vedi file LICENSE per maggiori informazioni.
 
 
 *Realizzato con ❤️ da [Seconet - Sergio Cornacchione](https://seconet.it)*
+
 
 
 
