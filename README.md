@@ -16,15 +16,16 @@ Una bellissima slidebar personalizzabile che si aggancia al lato del tuo sito Wo
 
 ### Pannello di Amministrazione
 Configura fino a 6 icone personalizzate con link, tooltip e colori.
-![Pannello di Amministrazione](/mio-slidebar/assets/screenshots/screenshot-1.png)
+![Pannello di Amministrazione](https://github.com/Seconet/MioSlidebar/blob/main/assets/screenshot-1.png)
 
 ### Frontend - Sidebar Destra
 Visualizzazione della sidebar sul lato destro del sito.
-![Sidebar Destra](assets/screenshots/screenshot-2.png)
+![Sidebar Destra](https://github.com/Seconet/MioSlidebar/blob/main/assets/screenshot-2.png)
+
 
 ### Frontend - Sidebar Sinistra
 La sidebar può essere compressa o posizionata anche sul lato sinistro 
-![Sidebar Sinistra](./assets/screenshots/screenshot-3.png)
+![Sidebar Sinistra](https://github.com/Seconet/MioSlidebar/blob/main/assets/screenshot-3.png)
 
 ## 🚀 Descrizione
 
@@ -153,6 +154,7 @@ GPL v2 o successiva. Vedi file LICENSE per maggiori informazioni.
 
 
 *Realizzato con ❤️ da [Seconet - Sergio Cornacchione](https://seconet.it)*
+
 
 
 
