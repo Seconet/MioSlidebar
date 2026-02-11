@@ -154,3 +154,4 @@ GPL v2 o successiva. Vedi file LICENSE per maggiori informazioni.
 
 *Realizzato con ❤️ da [Seconet - Sergio Cornacchione](https://seconet.it)*
 
+
